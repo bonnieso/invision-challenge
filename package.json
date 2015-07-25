@@ -5,12 +5,14 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha ./mocha_tests/tests.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "cov": "mocha lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "assert": "^1.3.0",
+    "coveralls": "^2.11.3",
     "mocha": "^2.2.5",
     "restify": "^3.0.3"
   }
